@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start:frontend": "cd Campus_buddy && npx expo start",
-    "start:backend": "cd Server && node server.js",
+    "start:backend": "cd Server && nodemon index.js",
     "start:both": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
     "build:frontend": "cd Campus_buddy && npm run build:android",
     "update:frontend": "cd Campus_buddy && npm run update:prod"
