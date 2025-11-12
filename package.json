@@ -1,0 +1,26 @@
+{
+  "name": "full-project",
+  "version": "1.0.0",
+  "description": "Campus Buddy full stack project (Expo + Node backend)",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start:frontend": "cd Campus_buddy && npx expo start",
+    "start:backend": "cd Server && node server.js",
+    "start:both": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
+    "build:frontend": "cd Campus_buddy && npm run build:android",
+    "update:frontend": "cd Campus_buddy && npm run update:prod"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RudraVerma-Engineer/Campus-Buddy-App.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RudraVerma-Engineer/Campus-Buddy-App/issues"
+  },
+  "homepage": "https://github.com/RudraVerma-Engineer/Campus-Buddy-App#readme",
+  "license": "ISC"
+}

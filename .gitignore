@@ -1,9 +1,9 @@
 # ===================================================
-# 📦 Node modules (ignore dependencies)
+# 📦 Node modules (ignore all dependencies)
 # ===================================================
+node_modules/
 Campus_buddy/node_modules/
 Server/node_modules/
-node_modules/
 
 # ===================================================
 # 🏗️ Build and output directories
@@ -20,6 +20,8 @@ Server/build/
 # ===================================================
 .expo/
 .expo-shared/
+*.expo/
+expo-debug.log
 
 # ===================================================
 # 🧰 Environment and config files
@@ -29,6 +31,16 @@ Server/build/
 .env.development
 .env.production
 .env.test
+Server/.env
+Campus_buddy/.env
+
+# ===================================================
+# 📄 Sensitive keys / service accounts
+# ===================================================
+service-account.json
+google-services.json
+GoogleService-Info.plist
+firebase.json
 
 # ===================================================
 # 🧾 Logs
@@ -57,14 +69,35 @@ Thumbs.db
 Desktop.ini
 
 # ===================================================
-# ⚙️ Temporary or misc files
+# ⚙️ Temporary / misc files
 # ===================================================
 *.tmp
 *.swp
 *.bak
 *.lock
+package-lock.json
 
 # ===================================================
-# 📝 Optional project files to ignore
+# 📷 Assets (optional large files)
+# ===================================================
+Campus_buddy/assets/temp/
+Campus_buddy/images/temp/
+*.psd
+*.xcf
+
+# ===================================================
+# 📝 Optional project files
 # ===================================================
 text.txt
+todo.txt
+
+# ===================================================
+# 🧠 TypeScript build cache (optional)
+# ===================================================
+tsconfig.tsbuildinfo
+
+# ===================================================
+# 🧪 Jest / Testing cache
+# ===================================================
+coverage/
+jest/
