@@ -1,0 +1,57 @@
+const timeTable = [{
+
+    "Monday": {
+        "9-10": "DBMS",
+        "10-11": " PDP",
+        "11-12": "COE",
+        "1-2": "Break",
+        "2-4": "Web LAB, Super 30",
+        "4-5": "Super30 ",
+    },
+    "Tuesday": {
+        "9-10": "DA",
+        "10-11": "ML",
+        "11-12": "DAA",
+        "12-1": "DBMS",
+        "1-2": "Break",
+        "2-4": "MINI PROJECT",
+        "4-5": "ITCS",
+    },
+    "wednesday": {
+        "9-10": "DAA",
+        "10-11": "WEB",
+        "11-12": "DBMS",
+        "12-1": "ITCS",
+        "1-2": "Break",
+        "2-3": "PDP",
+        "3-4": "Super 30",
+        "4-5": "Super30 ",
+    },
+    "Thrusday": {
+        "9-10": "ML",
+        "10-11": "DA",
+        "11-12": "DAA",
+        "12-1": "WEB",
+        "1-2": "Break",
+        "2-4": "",
+        "4-5": "",
+    },
+    "Friday": {
+        "9-10": "DAA",
+        "10-11": "DA",
+        "11-12": "DAA LAB",
+        "1-2": "Break",
+        "2-3": "Web TUT",
+        "3-5": "Super30 ",
+    },
+    "Saturday": {
+        "9-10": "WEB",
+        "10-11": "ML",
+        "11-12": "DAA",
+        "12-1": "PDP",
+        "1-2": "BreaK",
+        "2-3": "DBMS TUT",
+        "3-5": "DBMS LAB ",
+    },
+}]
+export default timeTable;

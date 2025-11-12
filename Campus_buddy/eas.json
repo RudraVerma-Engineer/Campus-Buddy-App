@@ -1,0 +1,84 @@
+// {
+//   "cli": {
+//     "version": ">= 3.17.0"
+//   },
+//   "build": {
+//     "development": {
+//       "distribution": "internal",
+//       "android": {
+//         "buildType": "apk"
+//       },
+//       "env": {
+//         "EXPO_DEBUG": "true"
+//       },
+//       "channel": "development"
+//     },
+//     "preview": {
+//       "distribution": "internal",
+//       "android": {
+//         "buildType": "apk"
+//       },
+//       "channel": "preview"
+//     },
+//     "production": {
+//       "android": {
+//         "buildType": "app-bundle"
+//       },
+//       "env": {
+//         "NODE_ENV": "production"
+//       },
+//       "channel": "production"
+//     }
+//   },
+//   "submit": {
+//     "production": {
+//       "android": {
+//         "serviceAccountKeyPath": "./service-account.json"
+//       }
+//     }
+//   }
+// }
+
+
+{
+  "cli": {
+    "version": ">= 3.17.0"
+  },
+  "build": {
+    "development": {
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk"
+      },
+      "env": {
+        "EXPO_DEBUG": "true"
+      },
+      "channel": "development"
+    },
+    "preview": {
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk"
+      },
+      "channel": "preview"
+    },
+    "production": {
+      "android": {
+        "buildType": "app-bundle"
+      },
+      "env": {
+        "NODE_ENV": "production"
+      },
+      "channel": "production",
+      "autoIncrement": true
+    }
+  },
+  "submit": {
+    "production": {
+      "android": {
+        "serviceAccountKeyPath": "./service-account.json",
+        "track": "production"
+      }
+    }
+  }
+}

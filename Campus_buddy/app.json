@@ -1,0 +1,80 @@
+{
+  "expo": {
+    "name": "Campus_buddy",
+    "slug": "Campus_buddy",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./images/campusLogo.png",
+    "scheme": "com.campusbuddy.app",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./images/campusLogo.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff",
+          "dark": {
+            "backgroundColor": "#000000"
+          }
+        }
+      ],
+      "expo-web-browser"
+    ],
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.campusbuddy.app",
+      "buildNumber": "1.0.0",
+      "runtimeVersion": {
+        "policy": "appVersion"
+      }
+    },
+    "android": {
+      "package": "com.campusbuddy.app",
+      "edgeToEdgeEnabled": true,
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./images/campusLogo.png"
+      },
+      "versionCode": 1,
+      "runtimeVersion": "1.0.0"
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./images/campusLogo.png"
+    },
+    "androidStatusBar": {
+      "backgroundColor": "#ffffff"
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "1e8c07f8-c220-4aa0-abbd-8a2ef1090d26"
+      },
+      "googleAuth": {
+        "expoClientId": "352485137591-odpdkm243uj3l92oq2m8porkv0nkfk31.apps.googleusercontent.com",
+        "webClientId": "352485137591-odpdkm243uj3l92oq2m8porkv0nkfk31.apps.googleusercontent.com",
+        "androidClientId": "352485137591-nd54kscoe38ct062dv0gj9vei48jb3qo.apps.googleusercontent.com"
+      }
+    },
+    "updates": {
+      "url": "https://u.expo.dev/1e8c07f8-c220-4aa0-abbd-8a2ef1090d26",
+      "enabled": true,
+      "fallbackToCacheTimeout": 0,
+      "requestHeaders": {
+        "expo-channel-name": "production"
+      },
+      "runtimeVersion": {
+        "policy": "sdkVersion"
+      }
+    }
+  }
+}
